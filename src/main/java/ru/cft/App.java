@@ -1,16 +1,22 @@
 package ru.cft;
 
+import com.sun.management.HotSpotDiagnosticMXBean;
 import javafx.application.Application;
+import javafx.concurrent.ScheduledService;
+import javafx.concurrent.Task;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import ru.cft.model.Car;
+import javafx.util.Duration;
+import ru.cft.model.User;
 
+import javax.management.MBeanServer;
 import java.io.IOException;
-import java.util.List;
-import java.util.Optional;
+import java.lang.management.ManagementFactory;
+import java.sql.Timestamp;
+import java.util.concurrent.Delayed;
 
 public class App extends Application {
 
@@ -19,6 +25,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
+
         stage = primaryStage;
         scene = new Scene(loadFXML("loginController"));
         primaryStage.setScene(scene);
@@ -55,5 +62,6 @@ public class App extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
 
 }

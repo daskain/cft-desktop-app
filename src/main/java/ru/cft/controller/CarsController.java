@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 import ru.cft.App;
 import ru.cft.model.Car;
 import ru.cft.model.Client;
+import ru.cft.model.StatusOfCar;
 import ru.cft.pojo.Dictionary;
 import ru.cft.service.CarsService;
 
@@ -155,7 +156,7 @@ public class CarsController {
 
                             if (optional.get() == ButtonType.OK) {
                                 if (car.getStatus().equals("free")) {
-                                    car.setStatus("unavailable");
+                                    car.setStatus(StatusOfCar.UNAVAILABLE.getStatus());
                                 } else {
                                     car.setStatus("free");
                                 }
@@ -182,11 +183,12 @@ public class CarsController {
                     Car car = getTableView().getItems().get(getIndex());
                     button.setPrefWidth(110);
                     button.setText("Удалить");
-                    if (car.getStatus().equals("rented")) {
+                    if (car.getStatus().equals(StatusOfCar.RENTED.getStatus())) {
                         button.disableProperty().set(true);
+                        button.setVisible(false);
                     } else {
                         button.disableProperty().set(false);
-                        button.visibleProperty().set(false);
+                        button.setVisible(true);
                         button.setOnAction(event -> {
                             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
                             alert.setHeaderText("Удалить авто");

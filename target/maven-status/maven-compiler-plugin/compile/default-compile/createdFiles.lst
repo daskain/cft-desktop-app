@@ -1,6 +1,7 @@
 ru\cft\controller\ClientsController.class
 ru\cft\dao\impl\CarsDAOImpl.class
 ru\cft\model\Client.class
+ru\cft\App$Dump.class
 ru\cft\controller\CarsController$1.class
 ru\cft\controller\LeaseController.class
 ru\cft\controller\ClientsController$2.class
@@ -15,6 +16,7 @@ ru\cft\configuration\HibernateConfig.class
 ru\cft\controller\MainPageController.class
 ru\cft\service\ClientsService.class
 ru\cft\controller\ClientsController$1.class
+ru\cft\App$1.class
 ru\cft\model\Rental.class
 ru\cft\dao\RentalDAO.class
 ru\cft\App.class
