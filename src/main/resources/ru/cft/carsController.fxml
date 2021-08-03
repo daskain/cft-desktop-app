@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.cft.controller.CarsController">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="117.0" prefHeight="509.0" prefWidth="770.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="117.0">
+         <children>
+            <Button fx:id="addCarButton" layoutX="646.0" layoutY="527.0" mnemonicParsing="false" onAction="#addClientButtonAction" prefHeight="30.0" prefWidth="120.0" text="Добавить" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="646.0" AnchorPane.topAnchor="527.0">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="210.0" layoutY="20.0" prefHeight="500.0" prefWidth="770.0" style="-fx-background-color: #ffffff;" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+               <children>
+                  <TableView fx:id="tableOfCars" layoutX="14.0" layoutY="14.0" prefHeight="608.0" prefWidth="1222.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+                     <columns>
+                        <TableColumn fx:id="vinCar" minWidth="0.0" prefWidth="160.0" text="VIN" />
+                        <TableColumn fx:id="brandCar" minWidth="0.0" prefWidth="160.0" resizable="false" text="Марка" />
+                        <TableColumn fx:id="modelCar" minWidth="0.0" prefWidth="160.0" resizable="false" text="Модель" />
+                        <TableColumn fx:id="numberCar" minWidth="0.0" prefWidth="130.0" text="Гос.номер" />
+                        <TableColumn fx:id="statusCar" maxWidth="153.0" minWidth="0.0" prefWidth="100.0" text="Статус" />
+                        <TableColumn fx:id="changeStatus" maxWidth="153.0" minWidth="0.0" prefWidth="115.0" text="Изменить статус" />
+                        <TableColumn fx:id="delete" maxWidth="153.0" minWidth="0.0" prefWidth="115.0" text="Удалить" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="vinCarField" layoutX="28.0" layoutY="529.0" prefHeight="30.0" prefWidth="160.0" promptText="VIN">
+               <font>
+                  <Font name="Consolas" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="brandCarField" layoutX="188.0" layoutY="529.0" prefHeight="30.0" prefWidth="160.0" promptText="Марка">
+               <font>
+                  <Font name="Consolas" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="modelCarField" layoutX="348.0" layoutY="529.0" prefHeight="30.0" prefWidth="160.0" promptText="Модель" AnchorPane.leftAnchor="348.0">
+               <font>
+                  <Font name="Consolas" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="numberCarField" layoutX="508.0" layoutY="529.0" prefHeight="30.0" prefWidth="130.0" promptText="Гос.номер">
+               <font>
+                  <Font name="Consolas" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="312.0" layoutY="15.0" prefHeight="100.0" prefWidth="400.0" text="CarShare" textAlignment="CENTER">
+         <font>
+            <Font name="Corbel Italic" size="48.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="24.0" layoutY="24.0" prefHeight="50.0" prefWidth="100.0" text="Авто" textAlignment="CENTER">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="closeButton" layoutX="625.0" layoutY="22.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="48.0" prefWidth="158.0" text="Закрыть" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="17.0">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.cft.controller.MainPageController">
+   <children>
+      <AnchorPane layoutX="13.0" layoutY="116.0" prefHeight="509.0" prefWidth="770.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="116.0">
+         <children>
+            <Button fx:id="carsButton" layoutX="20.0" layoutY="120.0" mnemonicParsing="false" onAction="#carsButtonAction" prefHeight="80.0" prefWidth="158.0" text="Автомобили" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="120.0">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="clientsButton" layoutX="20.0" layoutY="224.0" mnemonicParsing="false" onAction="#clientsButtonAction" prefHeight="80.0" prefWidth="158.0" text="Клиенты" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="220.0">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="leaseButton" layoutY="19.0" mnemonicParsing="false" onAction="#leaseButtonAction" prefHeight="80.0" prefWidth="158.0" text="Аренда" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="logOutButton" layoutX="1105.0" layoutY="14.0" mnemonicParsing="false" onAction="#logOut" prefHeight="48.0" prefWidth="158.0" text="Выйти" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="17.0">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="200.0" layoutY="15.0" prefHeight="100.0" prefWidth="400.0" text="CarShare" AnchorPane.bottomAnchor="485.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="Corbel Italic" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

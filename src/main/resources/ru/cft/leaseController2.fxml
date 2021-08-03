@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.cft.controller.LeaseTableController">
+   <children>
+      <AnchorPane layoutX="15.0" layoutY="116.0" prefHeight="509.0" prefWidth="770.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="116.0">
+         <children>
+            <Button fx:id="confirmLeaseButton" layoutX="598.0" layoutY="407.0" mnemonicParsing="false" onAction="#confirmLease" prefHeight="48.0" prefWidth="158.0" text="Сохранить">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="selectCarBox" layoutX="14.0" layoutY="14.0" onAction="#selectCar" prefHeight="35.0" prefWidth="650.0" promptText="Выбрать авто" AnchorPane.topAnchor="15.0" />
+            <ComboBox fx:id="selectClientBox" layoutX="14.0" layoutY="58.0" onAction="#selectClient" prefHeight="35.0" prefWidth="650.0" promptText="Выбрать клиента" AnchorPane.topAnchor="65.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="closeFrameButton" layoutX="627.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeFrame" prefHeight="48.0" prefWidth="158.0" text="Закрыть">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="200.0" layoutY="12.0" prefHeight="100.0" prefWidth="400.0" text="CarShare" AnchorPane.bottomAnchor="488.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font name="Corbel Italic" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
